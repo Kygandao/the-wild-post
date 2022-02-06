@@ -30,6 +30,3 @@ export async function getStaticProps() {
   }
 }
 
-
-//https://www.youtube.com/watch?v=HYv55DhgTuA&t=1448
-//57:17
