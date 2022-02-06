@@ -2,6 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-image: url('../public/images/dark-green-bg.jpg');
-}
