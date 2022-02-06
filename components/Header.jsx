@@ -18,16 +18,16 @@ const Header = () => {
           <div>
               <div className='float-left'>
                   <Link href='/'>
-                      <span>
+                      <div className='cursor-pointer'>
                           <img src='/images/twpWHITE.png' className='h-15'></img>
-                      </span>
+                      </div>
                   </Link>
               </div>
 
               <div className='float-right text-white'>
                   {categories.map((category, index) => (
                       <Link key={index} href={`/category/${category.slug}`}>
-                          <div className='text-xl'>
+                          <div className='text-xl cursor-pointer'>
                               {category.name}
                           </div>
                       </Link>
