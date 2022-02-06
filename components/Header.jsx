@@ -15,19 +15,19 @@ const Header = () => {
     
   return (
       <div className='container px-10 mx-auto mb-8'>
-          <div>
-              <div className='float-left'>
+          <div className='inline-block w-full py-8 border-b border-black'>
+              <div className='block md:float-left'>
                   <Link href='/'>
                       <div className='cursor-pointer'>
-                          <img src='/images/twp.png' className='h-28'></img>
+                          <img src='/images/wp.png' className='h-28'></img>
                       </div>
                   </Link>
               </div>
 
-              <div className='float-right text-black'>
+              <div className='hidden text-black md:float-left md:contents'>
                   {categories.map((category, index) => (
                       <Link key={index} href={`/category/${category.slug}`}>
-                          <div className='text-xl cursor-pointer'>
+                          <div className='mt-2 ml-4 font-semibold text-black align-middle cursor-pointer md:float-right'>
                               {category.name}
                           </div>
                       </Link>

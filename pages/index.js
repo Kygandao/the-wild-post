@@ -4,15 +4,15 @@ import { PostCard } from '../components';
 
 export default function Home({ posts }) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className='container px-10 mx-auto mb-8'>
       <Head>
         <title>The Wild Post</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        <div>
-          {posts.map((post) => <PostCard post={post} key={post.title} />)}
+      <div className='grid grid-cols-1 gap-6 lg:grid-cols-12'>
+        <div className='col-span-1 lg:col-span-8'>
+          {posts.map((post, index) => <PostCard post={post.node} key={index} />)}
         </div>
       </div>
       
@@ -29,3 +29,7 @@ export async function getStaticProps() {
     }
   }
 }
+
+
+//https://www.youtube.com/watch?v=HYv55DhgTuA&t=1448
+//57:17
