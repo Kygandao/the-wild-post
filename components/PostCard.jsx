@@ -30,7 +30,7 @@ const PostCard = ({ post }) => {
               </div>
             </div>
           </div>
-          <p className='px-4 mb-4 text-center text-gray-700 lg:p-20'>
+          <p className='px-4 mb-4 text-center text-gray-700 lg:p-15'>
             {post.excerpt}
           </p>
           <div className='text-center'>

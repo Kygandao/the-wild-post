@@ -19,7 +19,7 @@ const Header = () => {
               <div className='block md:float-left'>
                   <Link href='/'>
                       <div className='cursor-pointer'>
-                          <img src='/images/wp.png' className='h-28'></img>
+                          <img src='/images/wp.png' className='h-32'></img>
                       </div>
                   </Link>
               </div>
