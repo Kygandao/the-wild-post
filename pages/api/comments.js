@@ -4,7 +4,7 @@ import { GraphQLClient, gql } from 'graphql'
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT
 
-export default function comments(req, res) {
+export default async function comments(req, res) {
     const { name, email, slug, comment } = req.body
     const graphQLClient = new GraphQLClient(graphqlAPI, {
         headers: {
