@@ -16,8 +16,6 @@ const PostWidget = ({ categories, slug }) => {
     }
   }, [slug])
 
-  console.log(relatedPosts)
-
   return (
       <div className='p-6 mb-4 bg-gray-200 rounded-lg shadow-xl'>
           <h3 className='pb-2 mb-4 text-lg font-semibold border-b'>
