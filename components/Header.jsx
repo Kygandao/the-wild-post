@@ -22,12 +22,13 @@ const Header = () => {
                           <img src='/images/wp.png' className='h-32'></img>
                       </div>
                   </Link>
+                  
               </div>
 
               <div className='hidden text-black md:float-left md:contents'>
                   {categories.map((category, index) => (
                       <Link key={index} href={`/category/${category.slug}`}>
-                          <div className='mt-2 ml-4 font-semibold text-black align-middle cursor-pointer md:float-right'>
+                          <div className='mt-2 ml-4 font-semibold text-black cursor-pointer md:float-right'>
                               {category.name}
                           </div>
                       </Link>
